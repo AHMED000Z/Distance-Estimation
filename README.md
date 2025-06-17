@@ -19,7 +19,6 @@ This project provides a Python-based solution for estimating object distances us
 
 Install the required packages:
 
-```bash
 pip install torch opencv-python numpy scipy ultralytics
 Make sure your YOLO model is compatible with the ultralytics package.
 
@@ -30,7 +29,7 @@ distance = recognise_distance(
 )
 print(f"Distance to bottle: {distance} cm")
 
-# 📸 Assumptions
+## Assumptions
 Stereo images are horizontally aligned.
 
 The YOLO model is pre-trained or fine-tuned for your classes.
@@ -43,8 +42,8 @@ Modify based on your stereo setup:
 python
 Copy
 Edit
-fl = 30 - 37.9 * 50 / 68.2459
-tantheta = (1 / (50 - fl)) * (7.05 / 2) * sz1 / 37.9
+fl = 30 - 37.9 *50 / 68.2459
+tantheta = (1 / (50 - fl))* (7.05 / 2) * sz1 / 37.9
 fl: effective focal length
 
 tantheta: tangent of angle between cameras
