@@ -36,12 +36,8 @@ The YOLO model is pre-trained or fine-tuned for your classes.
 
 Focal length and stereo baseline are known or approximated.
 
-📏 Camera Geometry Example
 Modify based on your stereo setup:
 
-python
-Copy
-Edit
 fl = 30 - 37.9 *50 / 68.2459
 tantheta = (1 / (50 - fl))* (7.05 / 2) * sz1 / 37.9
 fl: effective focal length
